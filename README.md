@@ -6,4 +6,12 @@ To demostrate how to manage clear architecture, also manage of packages:
 
 ![Output sample](ezgif.com-resize(4).gif)
 
+Specially thanks people  that have shared your work , allow people like me use these images:
+
+Icons:
+https://icons8.com/illustrations/style--casual-life-3d 
+
+https://icons8.com/illustrations/style--flame
+
+https://icons8.com/illustrations/illustration/clip-online-advertising-smm
 
