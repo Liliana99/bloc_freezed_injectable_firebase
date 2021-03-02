@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "313535561573",
+    "project_id": "flutter-freezed-injectable",
+    "storage_bucket": "flutter-freezed-injectable.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313535561573:android:33098c365c93f8ff492b8c",
+        "android_client_info": {
+          "package_name": "com.example.flutter_bloc_freezed_injectable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313535561573-er81fuq45r25jq2o5kd2ae0tj1n0jsmo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_bloc_freezed_injectable",
+            "certificate_hash": "0898e84b997dbc7c6c820e0a3a1b2ae30a5c4329"
+          }
+        },
+        {
+          "client_id": "313535561573-aci2jfvbqkcg71916ialqp4k0d91ro15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMFVd7ZRn4YSe4uVICpnfL3Y6xAzt_lB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313535561573-aci2jfvbqkcg71916ialqp4k0d91ro15.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
