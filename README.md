@@ -3,7 +3,7 @@
 The objective of this flutter application about asynchronous programming in Dart II.
 To demostrate how to manage clear architecture, also manage of packages:
 # flutter_bloc,freezed,injectable,
-  firebase_auth,firebase_core.
+# firebase_auth,firebase_core.
   
   
 
