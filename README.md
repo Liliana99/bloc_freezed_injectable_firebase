@@ -19,10 +19,8 @@ To demostrate
 ![Output sample](video.gif)
 
 
-
-![Output sample](icons8-heart.gif)
 - https://www.marialijideveloper.com
-
+![Output sample](icons8-heart.gif)
 
 
 
