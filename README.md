@@ -31,7 +31,7 @@ https://icons8.com/illustrations/illustration/clip-online-advertising-smm
 
 <div>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
-![Output sample](heart.png)
+![Output sample](icons8-heart.gif)
 
 
 
