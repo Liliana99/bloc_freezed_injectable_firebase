@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_freezed_injectable/application/auth/sign_in_form/bloc/sign_in_form_bloc.dart';
+
 import 'package:flutter_bloc_freezed_injectable/application/auth/sign_up_form/bloc/sign_up_bloc_bloc.dart';
 import 'package:flutter_bloc_freezed_injectable/domain/core/value_validators.dart';
 import 'package:flutter_bloc_freezed_injectable/infrastructure/auth/auth_failure_or_success.dart';
@@ -53,7 +53,8 @@ class _SignUpFormState extends State<SignUpForm> {
           ),
         );
       }
-    }, builder: (context, state) {
+    },
+     builder: (context, state) {
       return Container(
         padding: EdgeInsets.only(
           left: 30,

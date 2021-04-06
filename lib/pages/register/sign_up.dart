@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_freezed_injectable/application/auth/sign_up_form/bloc/sign_up_bloc_bloc.dart';
-import 'package:flutter_bloc_freezed_injectable/pages/sing_up/widgets/sign_up_form.dart';
+import 'package:flutter_bloc_freezed_injectable/pages/register/widgets/sign_up_form.dart';
+
 
 import '../../injection.dart';
 

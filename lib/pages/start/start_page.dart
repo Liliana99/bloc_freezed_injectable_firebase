@@ -3,6 +3,12 @@ import 'package:flutter_bloc_freezed_injectable/pages/sign_in/sign_in_page.dart'
 
 class StartPage extends StatelessWidget {
   const StartPage({Key key}) : super(key: key);
+  static const flat_key = Key('flat_key');
+
+  void _navigateToSignInPage(BuildContext context) {
+    final route = MaterialPageRoute(builder: (_) => SignInPage());
+    Navigator.of(context).push(route);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +24,9 @@ class StartPage extends StatelessWidget {
                 ),
                 Expanded(
                   flex: 4,
-                  child:
-                      Container(child: Image.asset('assets/images/start.webp')),
+                  child: Container(
+                    child: Image.asset('assets/images/start.webp'),
+                  ),
                 ),
                 SizedBox(
                   height: 30,
@@ -38,15 +45,9 @@ class StartPage extends StatelessWidget {
                 ),
                 Spacer(flex: 1),
                 FlatButton(
+                  key: flat_key,
                   onPressed: () {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) {
-                          return SignInPage();
-                        },
-                      ),
-                    );
+                    _navigateToSignInPage(context);
                   },
                   color: Colors.blue[900],
                   shape: RoundedRectangleBorder(

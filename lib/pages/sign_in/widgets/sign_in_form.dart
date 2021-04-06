@@ -3,7 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_freezed_injectable/application/auth/sign_in_form/bloc/sign_in_form_bloc.dart';
 import 'package:flutter_bloc_freezed_injectable/domain/core/value_validators.dart';
 import 'package:flutter_bloc_freezed_injectable/infrastructure/auth/auth_failure_or_success.dart';
-import 'package:flutter_bloc_freezed_injectable/pages/sing_up/sign_up.dart';
+import 'package:flutter_bloc_freezed_injectable/pages/register/sign_up.dart';
+
+import 'package:page_transition/page_transition.dart';
 
 class SignInForm extends StatelessWidget {
   @override
@@ -172,11 +174,11 @@ class SignInForm extends StatelessWidget {
                           onTap: () {
                             FocusScope.of(context).unfocus;
                             Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) {
-                                return SignUpPage();
-                              }),
-                            );
+                            context,
+                            PageTransition(
+                                type: PageTransitionType.leftToRight,
+                                child: SignUpPage()),
+                          );
                           },
                           child: Text(
                             'Sign Up?',

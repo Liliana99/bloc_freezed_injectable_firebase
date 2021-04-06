@@ -1,0 +1,12 @@
+{
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    "workbench.settings.useSplitJSON": true,
+    "dart.previewBazelWorkspaceCustomScripts": true,
+    "files.autoSave": "afterDelay",
+    "editor.insertSpaces": false,
+    "dart.analyzerPath": null
+}

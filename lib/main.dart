@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc_freezed_injectable/injection.dart';
-import 'package:flutter_bloc_freezed_injectable/pages/sign_in/sign_in_page.dart';
 import 'package:firebase_core/firebase_core.dart';
+
 import 'package:flutter_bloc_freezed_injectable/pages/start/start_page.dart';
 
 void main() async {
-  //Here we need to initializer the App
+  //Here we need to initializer the App, 
+  //with Firebase.initializeApp() because 
+  //all packages from firebase had been updated!! so they 
+  //need to put here this commands
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   configureDependencies();
@@ -30,6 +33,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: StartPage(),
+    
     );
   }
 }

@@ -23,15 +23,22 @@ dependencies:
   firebase_auth:
   #All versions of firebase  had been were updated!!
   #then we should add firebase_core:
-  firebase_core:    
+  firebase_core:
+  page_transition:
+  fast_flutter_driver:       
   
 
 dev_dependencies:
+ 
   flutter_test:
     sdk: flutter
   freezed: ^0.12.7
   injectable_generator:
-  build_runner: ^1.11.1  
+  build_runner: ^1.11.1
+  test_coverage: ^0.5.0
+  test: ^1.15.4
+  mockito:
+  flutter_coverage_badge: ^0.0.1+1    
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
