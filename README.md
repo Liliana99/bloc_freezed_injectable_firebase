@@ -25,10 +25,8 @@ To demostrate
 
 
 
-<ul>
-<li>Line 1</li>
-<li>Line 2</li>
-</ul>
+<hr style="border:2px solid blue"> </hr>
+
 
 
 Specially thanks people  that have shared your work , allow people like me use these images:
