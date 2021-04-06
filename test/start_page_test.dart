@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_freezed_injectable/application/auth/sign_in_form/bloc/sign_in_form_bloc.dart';
-import 'package:flutter_bloc_freezed_injectable/domain/auth/i_auth_facade.dart';
-import 'package:flutter_bloc_freezed_injectable/pages/sign_in/sign_in_page.dart';
-import 'package:flutter_bloc_freezed_injectable/pages/sign_in/widgets/sign_in_form.dart';
 import 'package:flutter_bloc_freezed_injectable/pages/start/start_page.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
