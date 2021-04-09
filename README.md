@@ -5,7 +5,13 @@
 The objective of this flutter application about asynchronous programming in Dart II.
 To demostrate 
 ## how to manage clear architecture.
- 
+
+- ✅  Clean Architecture
+- ✅  Testing
+- ✅  Performance
+- ✅  Custom Animations
+
+## Flutter packages
  - [bloc: flutter_bloc package ] 
  - [freezed]
  - [injectable]
