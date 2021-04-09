@@ -22,7 +22,7 @@ To demostrate
   
   
 
-<![Output sample](video.gif) width=200 height=429/> 
+[Output sample](video.gif)
 
 
 - https://www.marialijideveloper.com
