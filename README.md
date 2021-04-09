@@ -1,6 +1,6 @@
 # flutter_bloc_freezed_injectable
 
-![Coverage](./coverage_badge.svg?sanitize=true)
+
 
 The objective of this flutter application about asynchronous programming in Dart II.
 To demostrate 
