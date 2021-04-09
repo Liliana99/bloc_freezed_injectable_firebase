@@ -22,7 +22,7 @@ To demostrate
   
   
 
-[Output sample](video.gif)
+![Output sample](video.gif)
 
 
 - https://www.marialijideveloper.com
