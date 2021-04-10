@@ -26,10 +26,10 @@ To demostrate
   
 
 ![Output sample](video.gif)
-
+![](assets/readme/widget_test.png)
 
 - https://www.marialijideveloper.com
-![Output sample](icons8-heart.gif)
+
 
 
 <hr style="border:2px solid blue"> </hr>
