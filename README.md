@@ -1,24 +1,5 @@
 # flutter_bloc_freezed_injectable
-
-
-
-The objective of this flutter application about asynchronous programming in Dart II.
-To demostrate 
-## how to manage clear architecture.
-
-- ✅  Clean Architecture
-- ✅  Testing
-- ✅  Performance
-- ✅  Custom Animations
-
-## Flutter packages
- - [bloc: flutter_bloc package ] 
- - [freezed]
- - [injectable]
- - [firebase_auth]
- - [firebase_core]
-
-
+[![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
 
 The objective of this flutter application about asynchronous programming in Dart II.
 To demostrate 
