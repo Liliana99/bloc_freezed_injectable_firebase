@@ -27,8 +27,8 @@ To demostrate
 
 ## Testing
 ### ✅ Widget Test
-<img src="assets/readme/widget_test.png" width=1000 height=629/> 
 
+![](assets/readme/widget_test.png)
 
 
 ![](assets/readme/clear_archicteture_scope.png)
