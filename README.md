@@ -37,7 +37,7 @@ To demostrate
 The following diagram represents the clean architecture approach taken to solve this challenge.
 
 With this approach we achieve a great decoupling and separation of concerns between the different layers of the application.
-According with best practices that I've learn on https://resocoder.com/2019/08/27/flutter-tdd-clean-architecture-course-1-explanation-project-structure/
+According with best practices that I've learned on https://resocoder.com/2019/08/27/flutter-tdd-clean-architecture-course-1-explanation-project-structure/
 also thanks regards some examples on github about good practices. 
 
 ![](assets/readme/clear_archicteture_scope.png)
