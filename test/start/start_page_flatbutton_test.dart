@@ -6,9 +6,9 @@ void main() {
     testWidgets('finds a widget using a Key', (WidgetTester tester) async {
       // await tester.pumpWidget(MyApp());
       // Define the test key.
-      final testKey = Key('flat_key');
+      const testKey = Key('flat_key');
       // Build a MaterialApp with the testKey.
-      await tester.pumpWidget(MaterialApp(key: testKey, home: Container()));
+      await tester.pumpWidget(MaterialApp(key: testKey, home: Container(),),);
       await tester.tap(find.byKey(testKey));
       // Wait for all the animations to finish
       await tester.pumpAndSettle();

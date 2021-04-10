@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc_freezed_injectable/pages/sign_in/sign_in_page.dart';
+import 'package:flutter_bloc_freezed_injectable/pages/sign_in/widgets/sign_up_button.dart';
+
 
 class StartPage extends StatelessWidget {
+
   const StartPage({Key key}) : super(key: key);
-  static const flat_key = Key('flat_key');
+  static const flatKey = Key('flat_key');
 
   void _navigateToSignInPage(BuildContext context) {
-    final route = MaterialPageRoute(builder: (_) => SignInPage());
+    final route = MaterialPageRoute(builder: (_) => const SignInPage());
     Navigator.of(context).push(route);
   }
 
@@ -15,27 +18,29 @@ class StartPage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: SafeArea(
+          // ignore: sized_box_for_whitespace
           child: Container(
             width: MediaQuery.of(context).size.width,
             child: Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 120,
                 ),
                 Expanded(
                   flex: 4,
+                  // ignore: avoid_unnecessary_containers
                   child: Container(
                     child: Image.asset('assets/images/start.webp'),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Text(
                   'Welcome to',
                   style: TextStyle(fontSize: 28, color: Colors.blue[900]),
                 ),
-                Text(
+                const Text(
                   'TELLSOUND ',
                   style: TextStyle(
                     fontSize: 48,
@@ -43,10 +48,11 @@ class StartPage extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-                Spacer(flex: 1),
+                const Spacer(flex: 1),
                 FlatButton(
-                  key: flat_key,
+                  key: flatKey,
                   onPressed: () {
+                    //Navigate to SignInPage
                     _navigateToSignInPage(context);
                   },
                   color: Colors.blue[900],
@@ -60,7 +66,7 @@ class StartPage extends StatelessWidget {
                     width: 160,
                     height: 40,
                     alignment: Alignment.center,
-                    child: Text(
+                    child: const Text(
                       'Login Start',
                       style: TextStyle(
                         color: Colors.white,
@@ -68,7 +74,7 @@ class StartPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
@@ -82,16 +88,10 @@ class StartPage extends StatelessWidget {
                         fontWeight: FontWeight.w300,
                       ),
                     ),
-                    Text(
-                      'Sign Up?',
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.blue[900],
-                      ),
-                    ),
+                   const SignUpButton(),
                   ],
                 ),
-                Spacer(),
+                const Spacer(),
               ],
             ),
           ),

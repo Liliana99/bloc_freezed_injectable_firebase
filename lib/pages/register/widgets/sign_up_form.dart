@@ -17,37 +17,37 @@ class _SignUpFormState extends State<SignUpForm> {
   Widget build(BuildContext context) {
     return BlocConsumer<SignUpBlocBloc, SignUpBlocState>(
         listener: (context, state) {
-      if (state.authFailureOrSuccess == AuthFailureOrSuccess.success()) {
+      if (state.authFailureOrSuccess == const AuthFailureOrSuccess.success()) {
         showSnackBar(
           context,
-          SnackBar(
+          const SnackBar(
             backgroundColor: Colors.blue,
             content: Text('Success'),
           ),
         );
       } else if (state.authFailureOrSuccess ==
-          AuthFailureOrSuccess.emailAlreadyInUse()) {
+          const AuthFailureOrSuccess.emailAlreadyInUse()) {
         showSnackBar(
           context,
-          SnackBar(
+          const SnackBar(
             backgroundColor: Colors.red,
             content: Text('Email Already In Use'),
           ),
         );
       } else if (state.authFailureOrSuccess ==
-          AuthFailureOrSuccess.invalidEmailAndPassword()) {
+          const AuthFailureOrSuccess.invalidEmailAndPassword()) {
         showSnackBar(
           context,
-          SnackBar(
+          const SnackBar(
             backgroundColor: Colors.red,
             content: Text('Invalid Email And Password'),
           ),
         );
       } else if (state.authFailureOrSuccess ==
-          AuthFailureOrSuccess.serverError()) {
+          const AuthFailureOrSuccess.serverError()) {
         showSnackBar(
           context,
-          SnackBar(
+          const SnackBar(
             backgroundColor: Colors.red,
             content: Text('Server Error'),
           ),
@@ -56,7 +56,7 @@ class _SignUpFormState extends State<SignUpForm> {
     },
      builder: (context, state) {
       return Container(
-        padding: EdgeInsets.only(
+        padding: const EdgeInsets.only(
           left: 30,
           right: 30,
           top: 30,
@@ -64,7 +64,7 @@ class _SignUpFormState extends State<SignUpForm> {
         ),
         decoration: BoxDecoration(
           color: Colors.blue[50],
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topRight: Radius.circular(20),
             topLeft: Radius.circular(20),
           ),
@@ -76,7 +76,7 @@ class _SignUpFormState extends State<SignUpForm> {
             children: [
               TextFormField(
                 textInputAction: TextInputAction.next,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   prefixIcon: Icon(Icons.email),
                   labelText: 'Email address',
                 ),
@@ -95,7 +95,7 @@ class _SignUpFormState extends State<SignUpForm> {
               ),
               TextFormField(
                 textInputAction: TextInputAction.done,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   prefixIcon: Icon(Icons.lock),
                   labelText: 'Password',
                 ),
@@ -115,12 +115,14 @@ class _SignUpFormState extends State<SignUpForm> {
                 color: Colors.blue,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(18),
-                  side: BorderSide(color: Colors.blue),
+                  side: const BorderSide(color: Colors.blue),
                 ),
+                // ignore: avoid_unnecessary_containers
                 child: Container(
-                  child: Text(
+                  child: const Text(
                     'Let\'s Get Started',
-                    style: TextStyle(
+                    // ignore: unnecessary_const
+                    style: const TextStyle(
                       color: Colors.white,
                     ),
                   ),
@@ -128,24 +130,24 @@ class _SignUpFormState extends State<SignUpForm> {
                 onPressed: () {
                   FocusScope.of(context).unfocus();
                   BlocProvider.of<SignUpBlocBloc>(context).add(
-                    SignUpBlocEvent.registerWithEmailAndPassword(),
+                    const SignUpBlocEvent.registerWithEmailAndPassword(),
                   );
                 },
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'Already have an account?',
                     style: TextStyle(
                       color: Colors.grey,
                       fontWeight: FontWeight.w300,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5.0,
                   ),
                   GestureDetector(
@@ -169,7 +171,7 @@ class _SignUpFormState extends State<SignUpForm> {
     });
   }
 
-  void showSnackBar(BuildContext context, Widget snackBar) {
+  void showSnackBar(BuildContext context, SnackBar snackBar) {
     Scaffold.of(context).showSnackBar(snackBar);
   }
 }

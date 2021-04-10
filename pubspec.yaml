@@ -25,13 +25,15 @@ dependencies:
   #then we should add firebase_core:
   firebase_core:
   page_transition:
-  fast_flutter_driver:       
+  fast_flutter_driver:
+  very_good_analysis:         
   
 
 dev_dependencies:
- 
   flutter_test:
     sdk: flutter
+  flutter_driver:
+    sdk: flutter  
   freezed: ^0.12.7
   injectable_generator:
   build_runner: ^1.11.1

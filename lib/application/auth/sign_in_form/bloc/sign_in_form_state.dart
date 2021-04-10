@@ -1,6 +1,7 @@
 part of 'sign_in_form_bloc.dart';
 
 @freezed
+
 abstract class SignInFormState with _$SignInFormState {
   const factory SignInFormState({
     @required String emailAddress,
@@ -10,7 +11,8 @@ abstract class SignInFormState with _$SignInFormState {
     @required AuthFailureOrSuccess authFailureOrSuccess,
   }) = _SignInFormState;
 
-  factory SignInFormState.initial() => SignInFormState(
+ 
+  factory SignInFormState.initial() => const SignInFormState(
         emailAddress: '',
         password: '',
         showErrorMessages: false,

@@ -13,9 +13,11 @@ part 'sign_in_form_state.dart';
 part 'sign_in_form_bloc.freezed.dart';
 
 @injectable
+
 class SignInFormBloc extends Bloc<SignInFormEvent, SignInFormState> {
   final IAuthFacade _authFacade;
 
+  // ignore: sort_constructors_first
   SignInFormBloc(this._authFacade) : super(SignInFormState.initial());
 
   @override
@@ -26,25 +28,25 @@ class SignInFormBloc extends Bloc<SignInFormEvent, SignInFormState> {
       emailChange: (event) async* {
         yield state.copyWith(
           emailAddress: event.email,
-          authFailureOrSuccess: AuthFailureOrSuccess.none(),
+          authFailureOrSuccess: const AuthFailureOrSuccess.none(),
         );
       },
       passwordChange: (event) async* {
         yield state.copyWith(
           password: event.password,
-          authFailureOrSuccess: AuthFailureOrSuccess.none(),
+          authFailureOrSuccess: const AuthFailureOrSuccess.none(),
         );
       },
       signInWithEmailAndPassword: (event) async* {
-        final String email = state.emailAddress;
-        final String password = state.password;
+        final email = state.emailAddress;
+        final password = state.password;
         if (validateEmailAddress(email) && validatePassword(password)) {
           yield state.copyWith(
-            showErrorMessages: false,
+            showErrorMessages: true,
             isSubmitting: true,
-            authFailureOrSuccess: AuthFailureOrSuccess.none(),
+            authFailureOrSuccess: const AuthFailureOrSuccess.none(),
           );
-          var result = await _authFacade.sigInWithEmailAndPassword(
+          final result = await _authFacade.sigInWithEmailAndPassword(
             emalAddress: email,
             password: password,
           );
@@ -56,7 +58,7 @@ class SignInFormBloc extends Bloc<SignInFormEvent, SignInFormState> {
         } else {
           yield state.copyWith(
             showErrorMessages: true,
-            authFailureOrSuccess: AuthFailureOrSuccess.none(),
+            authFailureOrSuccess: const AuthFailureOrSuccess.none(),
           );
         }
       },

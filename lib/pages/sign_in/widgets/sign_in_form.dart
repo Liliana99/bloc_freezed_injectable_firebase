@@ -3,46 +3,45 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_freezed_injectable/application/auth/sign_in_form/bloc/sign_in_form_bloc.dart';
 import 'package:flutter_bloc_freezed_injectable/domain/core/value_validators.dart';
 import 'package:flutter_bloc_freezed_injectable/infrastructure/auth/auth_failure_or_success.dart';
-import 'package:flutter_bloc_freezed_injectable/pages/register/sign_up.dart';
+import 'package:flutter_bloc_freezed_injectable/pages/sign_in/widgets/sign_up_button.dart';
 
-import 'package:page_transition/page_transition.dart';
 
 class SignInForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<SignInFormBloc, SignInFormState>(
       listener: (context, state) {
-        if (state.authFailureOrSuccess == AuthFailureOrSuccess.success()) {
+        if (state.authFailureOrSuccess == const AuthFailureOrSuccess.success()) {
           showSnackBar(
             context,
-            SnackBar(
+            const SnackBar(
               backgroundColor: Colors.blue,
               content: Text('Success'),
             ),
           );
         } else if (state.authFailureOrSuccess ==
-            AuthFailureOrSuccess.emailAlreadyInUse()) {
+            const AuthFailureOrSuccess.emailAlreadyInUse()) {
           showSnackBar(
             context,
-            SnackBar(
+            const SnackBar(
               backgroundColor: Colors.red,
               content: Text('Email Already In Use'),
             ),
           );
         } else if (state.authFailureOrSuccess ==
-            AuthFailureOrSuccess.invalidEmailAndPassword()) {
+            const AuthFailureOrSuccess.invalidEmailAndPassword()) {
           showSnackBar(
             context,
-            SnackBar(
+            const SnackBar(
               backgroundColor: Colors.red,
               content: Text('Invalid Email And Password'),
             ),
           );
         } else if (state.authFailureOrSuccess ==
-            AuthFailureOrSuccess.serverError()) {
+            const AuthFailureOrSuccess.serverError()) {
           showSnackBar(
             context,
-            SnackBar(
+            const SnackBar(
               backgroundColor: Colors.red,
               content: Text('Server Error'),
             ),
@@ -51,7 +50,7 @@ class SignInForm extends StatelessWidget {
       },
       builder: (context, state) {
         return Container(
-          padding: EdgeInsets.only(
+          padding: const EdgeInsets.only(
             left: 30,
             right: 30,
             top: 30,
@@ -59,7 +58,7 @@ class SignInForm extends StatelessWidget {
           ),
           decoration: BoxDecoration(
             color: Colors.blue[50],
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
               topRight: Radius.circular(30),
               topLeft: Radius.circular(30),
             ),
@@ -73,7 +72,7 @@ class SignInForm extends StatelessWidget {
                   children: [
                     TextFormField(
                       textInputAction: TextInputAction.next,
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         prefixIcon: Icon(Icons.email),
                         labelText: 'Email address',
                       ),
@@ -92,7 +91,7 @@ class SignInForm extends StatelessWidget {
                     ),
                     TextFormField(
                       textInputAction: TextInputAction.done,
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         prefixIcon: Icon(Icons.lock),
                         labelText: 'Password',
                       ),
@@ -110,13 +109,13 @@ class SignInForm extends StatelessWidget {
                           ? null
                           : 'Short Password',
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8.0,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Text(
+                        const Text(
                           'Forgot your password?',
                           style: TextStyle(
                               color: Colors.blue, fontWeight: FontWeight.bold),
@@ -125,7 +124,7 @@ class SignInForm extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 8.0,
                 ),
                 Column(
@@ -134,13 +133,13 @@ class SignInForm extends StatelessWidget {
                       color: Colors.blue,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(18),
-                        side: BorderSide(color: Colors.blue),
+                        side: const BorderSide(color: Colors.blue),
                       ),
                       child: Container(
                         width: 160,
                         height: 40,
                         alignment: Alignment.center,
-                        child: Text(
+                        child: const Text(
                           'Login',
                           style: TextStyle(
                             color: Colors.white,
@@ -150,44 +149,27 @@ class SignInForm extends StatelessWidget {
                       onPressed: () {
                         FocusScope.of(context).unfocus();
                         BlocProvider.of<SignInFormBloc>(context).add(
-                          SignInFormEvent.signInWithEmailAndPassword(),
+                          const SignInFormEvent.signInWithEmailAndPassword(),
                         );
                       },
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'Don\'t have an account?',
                           style: TextStyle(
                             color: Colors.grey,
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 5.0,
                         ),
-                        GestureDetector(
-                          onTap: () {
-                            FocusScope.of(context).unfocus;
-                            Navigator.push(
-                            context,
-                            PageTransition(
-                                type: PageTransitionType.leftToRight,
-                                child: SignUpPage()),
-                          );
-                          },
-                          child: Text(
-                            'Sign Up?',
-                            style: TextStyle(
-                              color: Colors.blue[900],
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        )
+                        const SignUpButton()
                       ],
                     )
                   ],
@@ -200,7 +182,9 @@ class SignInForm extends StatelessWidget {
     );
   }
 
-  void showSnackBar(BuildContext context, Widget snackBar) {
+  // ignore: public_member_api_docs
+  void showSnackBar(BuildContext context, SnackBar snackBar) {
     Scaffold.of(context).showSnackBar(snackBar);
   }
 }
+

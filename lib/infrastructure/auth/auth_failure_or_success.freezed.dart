@@ -29,6 +29,16 @@ class _$AuthFailureOrSuccessTearOff {
   }
 
 // ignore: unused_element
+  UserNotExist userNotFound() {
+    return const UserNotExist();
+  }
+
+// ignore: unused_element
+  InvalidEmail invalidEmail() {
+    return const InvalidEmail();
+  }
+
+// ignore: unused_element
   EmailAlreadyInUse emailAlreadyInUse() {
     return const EmailAlreadyInUse();
   }
@@ -50,6 +60,8 @@ mixin _$AuthFailureOrSuccess {
     @required TResult none(),
     @required TResult success(),
     @required TResult serverError(),
+    @required TResult userNotFound(),
+    @required TResult invalidEmail(),
     @required TResult emailAlreadyInUse(),
     @required TResult invalidEmailAndPassword(),
   });
@@ -58,6 +70,8 @@ mixin _$AuthFailureOrSuccess {
     TResult none(),
     TResult success(),
     TResult serverError(),
+    TResult userNotFound(),
+    TResult invalidEmail(),
     TResult emailAlreadyInUse(),
     TResult invalidEmailAndPassword(),
     @required TResult orElse(),
@@ -67,6 +81,8 @@ mixin _$AuthFailureOrSuccess {
     @required TResult none(None value),
     @required TResult success(Success value),
     @required TResult serverError(ServerError value),
+    @required TResult userNotFound(UserNotExist value),
+    @required TResult invalidEmail(InvalidEmail value),
     @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
     @required TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
   });
@@ -75,6 +91,8 @@ mixin _$AuthFailureOrSuccess {
     TResult none(None value),
     TResult success(Success value),
     TResult serverError(ServerError value),
+    TResult userNotFound(UserNotExist value),
+    TResult invalidEmail(InvalidEmail value),
     TResult emailAlreadyInUse(EmailAlreadyInUse value),
     TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
     @required TResult orElse(),
@@ -137,12 +155,16 @@ class _$None implements None {
     @required TResult none(),
     @required TResult success(),
     @required TResult serverError(),
+    @required TResult userNotFound(),
+    @required TResult invalidEmail(),
     @required TResult emailAlreadyInUse(),
     @required TResult invalidEmailAndPassword(),
   }) {
     assert(none != null);
     assert(success != null);
     assert(serverError != null);
+    assert(userNotFound != null);
+    assert(invalidEmail != null);
     assert(emailAlreadyInUse != null);
     assert(invalidEmailAndPassword != null);
     return none();
@@ -154,6 +176,8 @@ class _$None implements None {
     TResult none(),
     TResult success(),
     TResult serverError(),
+    TResult userNotFound(),
+    TResult invalidEmail(),
     TResult emailAlreadyInUse(),
     TResult invalidEmailAndPassword(),
     @required TResult orElse(),
@@ -171,12 +195,16 @@ class _$None implements None {
     @required TResult none(None value),
     @required TResult success(Success value),
     @required TResult serverError(ServerError value),
+    @required TResult userNotFound(UserNotExist value),
+    @required TResult invalidEmail(InvalidEmail value),
     @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
     @required TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
   }) {
     assert(none != null);
     assert(success != null);
     assert(serverError != null);
+    assert(userNotFound != null);
+    assert(invalidEmail != null);
     assert(emailAlreadyInUse != null);
     assert(invalidEmailAndPassword != null);
     return none(this);
@@ -188,6 +216,8 @@ class _$None implements None {
     TResult none(None value),
     TResult success(Success value),
     TResult serverError(ServerError value),
+    TResult userNotFound(UserNotExist value),
+    TResult invalidEmail(InvalidEmail value),
     TResult emailAlreadyInUse(EmailAlreadyInUse value),
     TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
     @required TResult orElse(),
@@ -244,12 +274,16 @@ class _$Success implements Success {
     @required TResult none(),
     @required TResult success(),
     @required TResult serverError(),
+    @required TResult userNotFound(),
+    @required TResult invalidEmail(),
     @required TResult emailAlreadyInUse(),
     @required TResult invalidEmailAndPassword(),
   }) {
     assert(none != null);
     assert(success != null);
     assert(serverError != null);
+    assert(userNotFound != null);
+    assert(invalidEmail != null);
     assert(emailAlreadyInUse != null);
     assert(invalidEmailAndPassword != null);
     return success();
@@ -261,6 +295,8 @@ class _$Success implements Success {
     TResult none(),
     TResult success(),
     TResult serverError(),
+    TResult userNotFound(),
+    TResult invalidEmail(),
     TResult emailAlreadyInUse(),
     TResult invalidEmailAndPassword(),
     @required TResult orElse(),
@@ -278,12 +314,16 @@ class _$Success implements Success {
     @required TResult none(None value),
     @required TResult success(Success value),
     @required TResult serverError(ServerError value),
+    @required TResult userNotFound(UserNotExist value),
+    @required TResult invalidEmail(InvalidEmail value),
     @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
     @required TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
   }) {
     assert(none != null);
     assert(success != null);
     assert(serverError != null);
+    assert(userNotFound != null);
+    assert(invalidEmail != null);
     assert(emailAlreadyInUse != null);
     assert(invalidEmailAndPassword != null);
     return success(this);
@@ -295,6 +335,8 @@ class _$Success implements Success {
     TResult none(None value),
     TResult success(Success value),
     TResult serverError(ServerError value),
+    TResult userNotFound(UserNotExist value),
+    TResult invalidEmail(InvalidEmail value),
     TResult emailAlreadyInUse(EmailAlreadyInUse value),
     TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
     @required TResult orElse(),
@@ -353,12 +395,16 @@ class _$ServerError implements ServerError {
     @required TResult none(),
     @required TResult success(),
     @required TResult serverError(),
+    @required TResult userNotFound(),
+    @required TResult invalidEmail(),
     @required TResult emailAlreadyInUse(),
     @required TResult invalidEmailAndPassword(),
   }) {
     assert(none != null);
     assert(success != null);
     assert(serverError != null);
+    assert(userNotFound != null);
+    assert(invalidEmail != null);
     assert(emailAlreadyInUse != null);
     assert(invalidEmailAndPassword != null);
     return serverError();
@@ -370,6 +416,8 @@ class _$ServerError implements ServerError {
     TResult none(),
     TResult success(),
     TResult serverError(),
+    TResult userNotFound(),
+    TResult invalidEmail(),
     TResult emailAlreadyInUse(),
     TResult invalidEmailAndPassword(),
     @required TResult orElse(),
@@ -387,12 +435,16 @@ class _$ServerError implements ServerError {
     @required TResult none(None value),
     @required TResult success(Success value),
     @required TResult serverError(ServerError value),
+    @required TResult userNotFound(UserNotExist value),
+    @required TResult invalidEmail(InvalidEmail value),
     @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
     @required TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
   }) {
     assert(none != null);
     assert(success != null);
     assert(serverError != null);
+    assert(userNotFound != null);
+    assert(invalidEmail != null);
     assert(emailAlreadyInUse != null);
     assert(invalidEmailAndPassword != null);
     return serverError(this);
@@ -404,6 +456,8 @@ class _$ServerError implements ServerError {
     TResult none(None value),
     TResult success(Success value),
     TResult serverError(ServerError value),
+    TResult userNotFound(UserNotExist value),
+    TResult invalidEmail(InvalidEmail value),
     TResult emailAlreadyInUse(EmailAlreadyInUse value),
     TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
     @required TResult orElse(),
@@ -418,6 +472,248 @@ class _$ServerError implements ServerError {
 
 abstract class ServerError implements AuthFailureOrSuccess {
   const factory ServerError() = _$ServerError;
+}
+
+/// @nodoc
+abstract class $UserNotExistCopyWith<$Res> {
+  factory $UserNotExistCopyWith(
+          UserNotExist value, $Res Function(UserNotExist) then) =
+      _$UserNotExistCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class _$UserNotExistCopyWithImpl<$Res>
+    extends _$AuthFailureOrSuccessCopyWithImpl<$Res>
+    implements $UserNotExistCopyWith<$Res> {
+  _$UserNotExistCopyWithImpl(
+      UserNotExist _value, $Res Function(UserNotExist) _then)
+      : super(_value, (v) => _then(v as UserNotExist));
+
+  @override
+  UserNotExist get _value => super._value as UserNotExist;
+}
+
+/// @nodoc
+class _$UserNotExist implements UserNotExist {
+  const _$UserNotExist();
+
+  @override
+  String toString() {
+    return 'AuthFailureOrSuccess.userNotFound()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is UserNotExist);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object>({
+    @required TResult none(),
+    @required TResult success(),
+    @required TResult serverError(),
+    @required TResult userNotFound(),
+    @required TResult invalidEmail(),
+    @required TResult emailAlreadyInUse(),
+    @required TResult invalidEmailAndPassword(),
+  }) {
+    assert(none != null);
+    assert(success != null);
+    assert(serverError != null);
+    assert(userNotFound != null);
+    assert(invalidEmail != null);
+    assert(emailAlreadyInUse != null);
+    assert(invalidEmailAndPassword != null);
+    return userNotFound();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object>({
+    TResult none(),
+    TResult success(),
+    TResult serverError(),
+    TResult userNotFound(),
+    TResult invalidEmail(),
+    TResult emailAlreadyInUse(),
+    TResult invalidEmailAndPassword(),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (userNotFound != null) {
+      return userNotFound();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object>({
+    @required TResult none(None value),
+    @required TResult success(Success value),
+    @required TResult serverError(ServerError value),
+    @required TResult userNotFound(UserNotExist value),
+    @required TResult invalidEmail(InvalidEmail value),
+    @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
+    @required TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
+  }) {
+    assert(none != null);
+    assert(success != null);
+    assert(serverError != null);
+    assert(userNotFound != null);
+    assert(invalidEmail != null);
+    assert(emailAlreadyInUse != null);
+    assert(invalidEmailAndPassword != null);
+    return userNotFound(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object>({
+    TResult none(None value),
+    TResult success(Success value),
+    TResult serverError(ServerError value),
+    TResult userNotFound(UserNotExist value),
+    TResult invalidEmail(InvalidEmail value),
+    TResult emailAlreadyInUse(EmailAlreadyInUse value),
+    TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (userNotFound != null) {
+      return userNotFound(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UserNotExist implements AuthFailureOrSuccess {
+  const factory UserNotExist() = _$UserNotExist;
+}
+
+/// @nodoc
+abstract class $InvalidEmailCopyWith<$Res> {
+  factory $InvalidEmailCopyWith(
+          InvalidEmail value, $Res Function(InvalidEmail) then) =
+      _$InvalidEmailCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class _$InvalidEmailCopyWithImpl<$Res>
+    extends _$AuthFailureOrSuccessCopyWithImpl<$Res>
+    implements $InvalidEmailCopyWith<$Res> {
+  _$InvalidEmailCopyWithImpl(
+      InvalidEmail _value, $Res Function(InvalidEmail) _then)
+      : super(_value, (v) => _then(v as InvalidEmail));
+
+  @override
+  InvalidEmail get _value => super._value as InvalidEmail;
+}
+
+/// @nodoc
+class _$InvalidEmail implements InvalidEmail {
+  const _$InvalidEmail();
+
+  @override
+  String toString() {
+    return 'AuthFailureOrSuccess.invalidEmail()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is InvalidEmail);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object>({
+    @required TResult none(),
+    @required TResult success(),
+    @required TResult serverError(),
+    @required TResult userNotFound(),
+    @required TResult invalidEmail(),
+    @required TResult emailAlreadyInUse(),
+    @required TResult invalidEmailAndPassword(),
+  }) {
+    assert(none != null);
+    assert(success != null);
+    assert(serverError != null);
+    assert(userNotFound != null);
+    assert(invalidEmail != null);
+    assert(emailAlreadyInUse != null);
+    assert(invalidEmailAndPassword != null);
+    return invalidEmail();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object>({
+    TResult none(),
+    TResult success(),
+    TResult serverError(),
+    TResult userNotFound(),
+    TResult invalidEmail(),
+    TResult emailAlreadyInUse(),
+    TResult invalidEmailAndPassword(),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (invalidEmail != null) {
+      return invalidEmail();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object>({
+    @required TResult none(None value),
+    @required TResult success(Success value),
+    @required TResult serverError(ServerError value),
+    @required TResult userNotFound(UserNotExist value),
+    @required TResult invalidEmail(InvalidEmail value),
+    @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
+    @required TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
+  }) {
+    assert(none != null);
+    assert(success != null);
+    assert(serverError != null);
+    assert(userNotFound != null);
+    assert(invalidEmail != null);
+    assert(emailAlreadyInUse != null);
+    assert(invalidEmailAndPassword != null);
+    return invalidEmail(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object>({
+    TResult none(None value),
+    TResult success(Success value),
+    TResult serverError(ServerError value),
+    TResult userNotFound(UserNotExist value),
+    TResult invalidEmail(InvalidEmail value),
+    TResult emailAlreadyInUse(EmailAlreadyInUse value),
+    TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (invalidEmail != null) {
+      return invalidEmail(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class InvalidEmail implements AuthFailureOrSuccess {
+  const factory InvalidEmail() = _$InvalidEmail;
 }
 
 /// @nodoc
@@ -462,12 +758,16 @@ class _$EmailAlreadyInUse implements EmailAlreadyInUse {
     @required TResult none(),
     @required TResult success(),
     @required TResult serverError(),
+    @required TResult userNotFound(),
+    @required TResult invalidEmail(),
     @required TResult emailAlreadyInUse(),
     @required TResult invalidEmailAndPassword(),
   }) {
     assert(none != null);
     assert(success != null);
     assert(serverError != null);
+    assert(userNotFound != null);
+    assert(invalidEmail != null);
     assert(emailAlreadyInUse != null);
     assert(invalidEmailAndPassword != null);
     return emailAlreadyInUse();
@@ -479,6 +779,8 @@ class _$EmailAlreadyInUse implements EmailAlreadyInUse {
     TResult none(),
     TResult success(),
     TResult serverError(),
+    TResult userNotFound(),
+    TResult invalidEmail(),
     TResult emailAlreadyInUse(),
     TResult invalidEmailAndPassword(),
     @required TResult orElse(),
@@ -496,12 +798,16 @@ class _$EmailAlreadyInUse implements EmailAlreadyInUse {
     @required TResult none(None value),
     @required TResult success(Success value),
     @required TResult serverError(ServerError value),
+    @required TResult userNotFound(UserNotExist value),
+    @required TResult invalidEmail(InvalidEmail value),
     @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
     @required TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
   }) {
     assert(none != null);
     assert(success != null);
     assert(serverError != null);
+    assert(userNotFound != null);
+    assert(invalidEmail != null);
     assert(emailAlreadyInUse != null);
     assert(invalidEmailAndPassword != null);
     return emailAlreadyInUse(this);
@@ -513,6 +819,8 @@ class _$EmailAlreadyInUse implements EmailAlreadyInUse {
     TResult none(None value),
     TResult success(Success value),
     TResult serverError(ServerError value),
+    TResult userNotFound(UserNotExist value),
+    TResult invalidEmail(InvalidEmail value),
     TResult emailAlreadyInUse(EmailAlreadyInUse value),
     TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
     @required TResult orElse(),
@@ -571,12 +879,16 @@ class _$InvalidEmailAndPassword implements InvalidEmailAndPassword {
     @required TResult none(),
     @required TResult success(),
     @required TResult serverError(),
+    @required TResult userNotFound(),
+    @required TResult invalidEmail(),
     @required TResult emailAlreadyInUse(),
     @required TResult invalidEmailAndPassword(),
   }) {
     assert(none != null);
     assert(success != null);
     assert(serverError != null);
+    assert(userNotFound != null);
+    assert(invalidEmail != null);
     assert(emailAlreadyInUse != null);
     assert(invalidEmailAndPassword != null);
     return invalidEmailAndPassword();
@@ -588,6 +900,8 @@ class _$InvalidEmailAndPassword implements InvalidEmailAndPassword {
     TResult none(),
     TResult success(),
     TResult serverError(),
+    TResult userNotFound(),
+    TResult invalidEmail(),
     TResult emailAlreadyInUse(),
     TResult invalidEmailAndPassword(),
     @required TResult orElse(),
@@ -605,12 +919,16 @@ class _$InvalidEmailAndPassword implements InvalidEmailAndPassword {
     @required TResult none(None value),
     @required TResult success(Success value),
     @required TResult serverError(ServerError value),
+    @required TResult userNotFound(UserNotExist value),
+    @required TResult invalidEmail(InvalidEmail value),
     @required TResult emailAlreadyInUse(EmailAlreadyInUse value),
     @required TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
   }) {
     assert(none != null);
     assert(success != null);
     assert(serverError != null);
+    assert(userNotFound != null);
+    assert(invalidEmail != null);
     assert(emailAlreadyInUse != null);
     assert(invalidEmailAndPassword != null);
     return invalidEmailAndPassword(this);
@@ -622,6 +940,8 @@ class _$InvalidEmailAndPassword implements InvalidEmailAndPassword {
     TResult none(None value),
     TResult success(Success value),
     TResult serverError(ServerError value),
+    TResult userNotFound(UserNotExist value),
+    TResult invalidEmail(InvalidEmail value),
     TResult emailAlreadyInUse(EmailAlreadyInUse value),
     TResult invalidEmailAndPassword(InvalidEmailAndPassword value),
     @required TResult orElse(),

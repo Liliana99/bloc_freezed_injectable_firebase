@@ -11,9 +11,11 @@ void main() async {
   //need to put here this commands
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  //Inizialize injection getIt
   configureDependencies();
   runApp(MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           elevation: 0.0,
           color: Colors.transparent,
           iconTheme: IconThemeData(
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: StartPage(),
+      home: const StartPage(),
     
     );
   }

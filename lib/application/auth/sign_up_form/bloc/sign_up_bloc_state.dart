@@ -10,7 +10,7 @@ abstract class SignUpBlocState with _$SignUpBlocState {
     @required AuthFailureOrSuccess authFailureOrSuccess,
   }) = _SignUpBlocState;
 
-  factory SignUpBlocState.initial() => SignUpBlocState(
+  factory SignUpBlocState.initial() => const SignUpBlocState(
         emailAddress: '',
         password: '',
         showErrorMessages: false,

@@ -4,7 +4,9 @@ import 'package:flutter_bloc_freezed_injectable/application/auth/sign_in_form/bl
 import 'package:flutter_bloc_freezed_injectable/injection.dart';
 import 'package:flutter_bloc_freezed_injectable/pages/sign_in/widgets/sign_in_form.dart';
 
+
 class SignInPage extends StatelessWidget {
+
   const SignInPage({Key key}) : super(key: key);
 
   @override
@@ -12,7 +14,7 @@ class SignInPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
-        title: Text(
+        title: const Text(
           'Welcome Back!',
           style: TextStyle(
               color: Colors.black, fontSize: 24, fontWeight: FontWeight.w500),
@@ -20,6 +22,7 @@ class SignInPage extends StatelessWidget {
         centerTitle: true,
       ),
       body: SafeArea(
+        // ignore: avoid_unnecessary_containers
         child: Container(
           child: CustomScrollView(
             reverse: true,
@@ -29,7 +32,7 @@ class SignInPage extends StatelessWidget {
                 child: Column(
                   children: [
                     Container(
-                        padding: EdgeInsets.all(10.0),
+                        padding: const EdgeInsets.all(10.0),
                         height: 270,
                         width: 270,
                         child: Image.asset('assets/images/home.webp')),

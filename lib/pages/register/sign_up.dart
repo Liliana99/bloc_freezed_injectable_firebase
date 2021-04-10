@@ -6,7 +6,9 @@ import 'package:flutter_bloc_freezed_injectable/pages/register/widgets/sign_up_f
 
 import '../../injection.dart';
 
+
 class SignUpPage extends StatelessWidget {
+
   const SignUpPage({Key key}) : super(key: key);
 
   @override
@@ -14,7 +16,7 @@ class SignUpPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
-        title: Text(
+        title: const Text(
           'Create Account',
           style: TextStyle(
               color: Colors.black, fontSize: 24, fontWeight: FontWeight.w500),
@@ -22,6 +24,7 @@ class SignUpPage extends StatelessWidget {
         centerTitle: true,
       ),
       body: SafeArea(
+        // ignore: avoid_unnecessary_containers
         child: Container(
           child: CustomScrollView(
             reverse: true,
@@ -31,7 +34,7 @@ class SignUpPage extends StatelessWidget {
                 child: Column(
                   children: [
                     Container(
-                        padding: EdgeInsets.all(10.0),
+                        padding: const EdgeInsets.all(10.0),
                         height: 270,
                         width: 270,
                         child: Image.asset('assets/images/sig_in_logo.webp')),

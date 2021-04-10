@@ -7,6 +7,8 @@ abstract class AuthFailureOrSuccess with _$AuthFailureOrSuccess {
   const factory AuthFailureOrSuccess.none() = None;
   const factory AuthFailureOrSuccess.success() = Success;
   const factory AuthFailureOrSuccess.serverError() = ServerError;
+  const factory AuthFailureOrSuccess.userNotFound() = UserNotExist;
+  const factory AuthFailureOrSuccess.invalidEmail() = InvalidEmail;
   const factory AuthFailureOrSuccess.emailAlreadyInUse() = EmailAlreadyInUse;
   const factory AuthFailureOrSuccess.invalidEmailAndPassword() =
       InvalidEmailAndPassword;
