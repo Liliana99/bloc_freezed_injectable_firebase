@@ -27,7 +27,7 @@ To demostrate
 
 ## Testing
 ### ✅ Widget Test
-<img src="assets/readme/widget_test.png" width=400 height=729/> 
+<img src="assets/readme/widget_test.png" width=1000 height=629/> 
 
 
 
