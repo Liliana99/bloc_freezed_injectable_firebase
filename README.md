@@ -1,7 +1,5 @@
 # flutter_bloc_freezed_injectable
 
-<<<<<<< HEAD
-=======
 
 
 The objective of this flutter application about asynchronous programming in Dart II.
@@ -77,4 +75,4 @@ https://icons8.com/illustrations/illustration/clip-online-advertising-smm
 
 
 
->>>>>>> 846b580ee6037745b9adb6a9fe0423f16ff11784
+
