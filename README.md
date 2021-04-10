@@ -19,7 +19,11 @@ To demostrate
  - [freezed]
  - [injectable_generator]
 
-![Output sample](video.gif)\b
+
+
+![Output sample](video.gif)
+
+
 
 ## Testing
 ### ✅ Widget Test
