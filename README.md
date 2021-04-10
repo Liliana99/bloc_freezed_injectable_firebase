@@ -39,11 +39,6 @@ To demostrate
 
 <hr style="border:2px solid blue"> </hr>
 
-
-<hr style="border:2px solid blue"> </hr>
-
-
-
 Specially thanks people  that have shared your work , allow people like me use these images:
 
 Icons:
