@@ -26,7 +26,9 @@ To demostrate
   
 
 ![Output sample](video.gif)
-![](assets/readme/clear_architecture_scope.png)
+
+
+![](assets/readme/clear_archicteture_scope.png)
 
 - https://www.marialijideveloper.com
 
