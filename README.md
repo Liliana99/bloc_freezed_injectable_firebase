@@ -31,6 +31,12 @@ To demostrate
 ![](assets/readme/widget_test.png)
 
 
+
+## Project Structure - Clean Architecture
+
+The following diagram represents the clean architecture approach taken to solve this challenge.
+
+With this approach we achieve a great decoupling and separation of concerns between the different layers of the application. 
 ![](assets/readme/clear_archicteture_scope.png)
 
 - https://www.marialijideveloper.com
