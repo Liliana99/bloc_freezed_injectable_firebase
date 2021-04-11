@@ -1,6 +1,8 @@
 # flutter_bloc_freezed_injectable
 [![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
 
+### ⚡&ensp;Social Media
+
 The objective of this flutter application about asynchronous programming in Dart II.
 To demostrate 
 ## how to manage clear architecture.
